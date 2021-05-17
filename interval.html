@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Music</title>
+    <link rel="stylesheet" href="music.css"></link>
+<link rel="apple-touch-icon" sizes="180x180" 
+href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" 
+href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" 
+href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<script src="http://www.wilfridoperez.com/jquery-3.5.1.min.js"></script>
+<script src="interval.js"></script>
+</head>
+<body>
+	<div id="centralElement">
+    <div id="header">Interval Exercise</div>
+    <div id="explanation">Click on the play icon and listen to the two notes. Then select the type of interval they form.</div>
+    <div id="playBox"><img src="play.png" onclick="playsounds()" /></div>
+    <div id="responseBox">
+    Name of interval:<br>
+          <input type="radio" id="second" name="interval" value="2">
+        <label for="second">Second</label><br>
+        <input type="radio" id="third" name="interval" value="3">
+        <label for="third">Third</label><br>
+        <input type="radio" id="fourth" name="interval" value="4">
+        <label for="fourth">Fourth</label><br>
+        <input type="radio" id="fifth" name="interval" value="5">
+        <label for="fifth">Fifth</label><br>
+        <input type="radio" id="sixth" name="interval" value="6">
+        <label for="sixth">Sixth</label><br>
+        <input type="radio" id="seventh" name="interval" value="7">
+        <label for="seventh">Seventh</label><br>
+        <input type="radio" id="octave" name="interval" value="8">
+        <label for="octave">Octave</label>
+    </div>
+    <div id="verifyBox"><input id="checkButton" type = "button" value = 
+"Check your 
+answer!" 
+onclick = "compare()" /></div>
+    <div id="navBox">
+        <div id="homeLink"><a href="music.html">Music Exercises</a></div>
+    </div>
+	</div>
+</body>
+</html>

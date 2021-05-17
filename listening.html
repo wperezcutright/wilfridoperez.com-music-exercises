@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Music</title>
+    <link rel="stylesheet" href="music.css"></link>
+<link rel="apple-touch-icon" sizes="180x180" 
+href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" 
+href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" 
+href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<script src="http://www.wilfridoperez.com/jquery-3.5.1.min.js"></script>
+<script src="listening.js"></script>
+</head>
+<body>
+	<div id="centralElement">
+    <div id="header">Listening Exercise</div>
+    <div id="explanation">Click on the play icon and listen to the note. 
+Then type the name of the note into the text box. Use an 's' to indicate a 
+sharp and an 'f' to indicate a flat.</div>
+    <div id="playBox"><img src="play.png" onclick="playsounds()" /></div>
+    <div id="textResponseBox"><input id=noteResponse placeholder="Name of note"></input> </div>
+    <div id="verifyBox"><input id="checkButton" type = "button" value = 
+"Check your 
+answer!" 
+onclick = "compare()" /></div>
+    <div id="navBox">
+        <div id="homeLink"><a href="music.html">Music Exercises</a></div>
+    </div>
+	</div>
+</body>
+</html>
